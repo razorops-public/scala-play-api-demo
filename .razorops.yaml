@@ -1,0 +1,21 @@
+version: v2
+
+tasks:
+  execute-test:
+    steps:
+    - checkout
+    - commands:
+      - docker system prune -f; docker-compose down
+      - docker-compose up -d
+    - cache/pull: sbt-{{ checksum "project/build.properties" }}
+    - run: sbt clean compile
+    - cache/push:
+        key: sbt-{{ checksum "project/build.properties" }}
+        paths:
+        - ~/.sbt
+        - ~/.ivy2/cache
+    - commands:
+      - dockerize -wait tcp://:9200 -timeout 10s
+      - sbt test
+    - run: docker-compose down
+      when: always

@@ -15,6 +15,7 @@ libraryDependencies ++= Seq(
 
   //validator library
   "com.wix" %% "accord-core" % Dependencies.wixAccordVersion,
+  "javax.xml.bind" % "jaxb-api" % "2.3.0",
 
   //swagger
   "io.swagger" %% "swagger-play2" % Dependencies.swaggerPlayVersion,

@@ -43,7 +43,7 @@ If you're new to Razorops, feel free to fork this repository and use it to [crea
 
 `.razorops.yaml` contains the pipeline code to build and execute the tests for this project. To know more about how to write and customize, refer to the [documentation](https://docs.razorops.com).
 
-It uses Docker-Compose commands to bootstrap the containers and exec into web container to run the tests. Here is the link of [the pipeline](https://dashboard.razorops.com/apps/delicate-sunset-2750/workflows) workflows page.
+It uses Docker-Compose commands to bootstrap the containers and exec into web container to run the tests. Here is the link of [the pipeline](https://dashboard.razorops.com/apps/weathered-glade-4304/workflows) workflows page.
 
 ### License
 

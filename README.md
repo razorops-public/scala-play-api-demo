@@ -1,5 +1,9 @@
 ## Razorops CI/CD pipeline demo with Play Framework
 
+If you have forked this repo, then connect with Razorops to create your demo pipeline by following the below button
+
+[![Connect](https://github.com/razorops-public/images/blob/main/connect_with_github.svg)](https://dashboard.razorops.com/get-github-installation-link-for-org)
+
 This is an example code to demonstrate how to create [Scala](https://docs.docker.com/compose/) based pipeline on [Razorops](https://docs.razorops.com/) platform.
 
 This application consists of REST APIs to perform CRUD operations using PlayFramework, Scala and Elasticsearch(v6.x) as database.
